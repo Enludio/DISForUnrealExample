@@ -252,7 +252,7 @@ bool ULowEntryExtendedStandardLibrary::MacPlatform()
 
 bool ULowEntryExtendedStandardLibrary::Ps4Platform()
 {
-#if PLATFORM_PS4
+#if defined(PLATFORM_PS4)
 	return true;
 #else
 	return false;
@@ -261,7 +261,7 @@ bool ULowEntryExtendedStandardLibrary::Ps4Platform()
 
 bool ULowEntryExtendedStandardLibrary::XboxOnePlatform()
 {
-#if PLATFORM_XBOXONE
+#if defined(PLATFORM_XBOXONE)
 	return true;
 #else
 	return false;
